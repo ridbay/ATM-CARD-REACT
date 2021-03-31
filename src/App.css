@@ -1,38 +1,52 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+
+.credit-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 400px;
+    height: 250px;
+    padding: 25px;
+    border-radius: 15px;
+
+    color: white;
+
+    /* background-image: linear-gradient(25deg, #0f509e, #1399cd); */
+     background-image: linear-gradient(25deg, #000203, #000000);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.credit-card__logo{
+    display: flex;
+}
+.eye{
+    margin-left: auto;
+}
+.credit-card__number {
+    display: flex;
+    justify-content: center;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 45px;
+}
+.number-4{
+    margin: 10px;
+}
+.credit-card__info {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 25px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.credit-card__info_label {
+    font-size: 14px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.credit-card__info_expiry {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.credit-card__info_left{
+margin-right: 10px;
 }
