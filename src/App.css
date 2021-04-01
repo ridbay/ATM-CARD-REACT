@@ -1,52 +1,79 @@
-@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
-
-.credit-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 400px;
-    height: 250px;
-    padding: 25px;
-    border-radius: 15px;
-
-    color: white;
-
-    /* background-image: linear-gradient(25deg, #0f509e, #1399cd); */
-     background-image: linear-gradient(25deg, #000203, #000000);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-}
-.credit-card__logo{
-    display: flex;
-}
-.eye{
-    margin-left: auto;
-}
-.credit-card__number {
+@import url("https://fonts.googleapis.com/css?family=Fjalla+One");
+.container{
     display: flex;
     justify-content: center;
-    font-family: 'Fjalla One', sans-serif;
-    font-size: 45px;
+    align-items: center;
+    margin-top: 140px;
 }
-.number-4{
-    margin: 10px;
+
+.credit-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 400px;
+  /* height: 250px; */
+  padding: 25px;
+  border-radius: 15px;
+
+  color: white;
+
+  /* background-image: linear-gradient(25deg, #0f509e, #1399cd); */
+  background-image: linear-gradient(25deg, #000203, #000000);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.credit-card__logo {
+  display: flex;
+}
+.card-logo {
+  height: 100%;
+  width: 100%;
+  background: url("./patriciaicon.png") no-repeat center center;
+  background-size: cover;
+}
+.eye {
+  margin-left: auto;
+}
+.credit-card__number {
+  color: #a7a7a7;
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  font-family: "Graphik", sans-serif;
+  font-size: 23px;
+}
+.number-4 {
+  margin: 25px;
+}
+.number-5 {
+  font-size: 30px;
+  margin-top: 22px;
 }
 .credit-card__info {
-    display: flex;
-    justify-content: space-between;
-    font-family: 'Fjalla One', sans-serif;
-    font-size: 25px;
+  margin-top: 72px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-family: "Graphik", sans-serif;
+  font-size: 25px;
+  color: #a7a7a7;
 }
 
 .credit-card__info_label {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 .credit-card__info_expiry {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
-.credit-card__info_left{
-margin-right: 10px;
+.credit-card__info_left {
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.valid {
+  font-size: 7px;
+  line-height: 7.7px;
 }

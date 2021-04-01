@@ -12,7 +12,9 @@ const App = () => {
     setNumberShown(numberShown ? false : true);
   };
   return (
-    <div className="credit-card">
+    <div className="container">
+<div className="credit-card">
+      <div className="card-logo">
       <div className="credit-card__logo">
         <img src={Logo} alt="" />
         <div className="eye">
@@ -29,11 +31,11 @@ const App = () => {
         </div>
       ) : (
         <div className="credit-card__number">
-          {" "}
+        
+          <div className="number-4 number-5">••••</div>
+          <div className="number-4 number-5">••••</div>
+          <div className="number-4 number-5">••••</div>
           <div className="number-4">9784</div>
-          <div className="number-4">****</div>
-          <div className="number-4">****</div>
-          <div className="number-4">****</div>
         </div>
       )}
 
@@ -45,18 +47,22 @@ const App = () => {
         <div className="credit-card__info_expiry">
           <div className="credit-card__info_label">
             <div className="credit-card__info_left">
-              <div>VALID</div>
-              <div>THRU</div>
+              <div className="valid">VALID</div>
+              <div className="valid">THRU</div>
             </div>
           </div>
           <div>10/12</div>
         </div>
         <div className="credit-card__info_expiry">
-          <div className="credit-card__info_label credit-card__info_left">CVV</div>
-          <div>{numberShown ? 455 : "***"}</div>
+          <div className="credit-card__info_label credit-card__info_left valid">CVV</div>
+          <div>{numberShown ? 455 : "•••"}</div>
         </div>
       </div>
+      </div>
+      
     </div>
+    </div>
+    
   );
 };
 
